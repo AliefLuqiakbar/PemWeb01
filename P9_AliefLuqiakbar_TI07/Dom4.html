@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan</title>
+</head>
+<body>
+    <h1>Menghitung Dua Jumlah Bilangan</h1>
+
+    <input type="number" id="first">
+    <br>
+    <span>+</span>
+    <br>
+    <input type="number" id="second">
+    <br>
+    <span>=</span>
+    <br>
+    <input type="button" value="Hitung" onclick="hitung()" />
+    <br>
+    <input type="number" id="hasil" />
+
+    <script>
+        function hitung(){
+            let hasil;
+            let first;
+            let second;
+
+            first = parseInt(document.getElementById("first").value);
+            second = parseInt(document.getElementById("second").value);
+            hasil = first + second;
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</body>
+</html>
